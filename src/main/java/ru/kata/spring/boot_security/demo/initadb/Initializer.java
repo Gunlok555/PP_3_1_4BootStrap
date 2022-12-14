@@ -31,10 +31,10 @@ public class Initializer {
 
 
         User user = new User
-                ("user@mail.ru", "Иван", "Иванов",(byte)21,
+                ("user@mail.sru", "User", "FamilyUser",(byte)99,
                         new BCryptPasswordEncoder().encode("user"));
         User user2 = new User
-                ("admin@mail.ru", "Петр", "Петров",(byte)33,
+                ("admin@mail.sru", "Admin", "FamilyAdmin",(byte)69,
                         new BCryptPasswordEncoder().encode("admin"));
 
         user.setRoles(new HashSet<>(Set.of(role2)));
